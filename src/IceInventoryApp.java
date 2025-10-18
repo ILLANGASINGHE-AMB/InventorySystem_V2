@@ -28,7 +28,7 @@ public class IceInventoryApp {
     private JLabel statusLabel;
     private int billCounter = 1000;
 
-    // Panels
+
     private JPanel cardsPanel;
     private JPanel inventoryViewPanel;
     private JPanel salesHistoryPanel;
