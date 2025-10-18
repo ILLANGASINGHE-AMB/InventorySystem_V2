@@ -1,9 +1,9 @@
 public class InventoryItem {
     public String itemId;
-    public String type;      // Manufactured | Resell | WASTE
+    public String type;
     public int quantity;
     public double unitPrice;
-    public long lastUpdated; // epoch millis
+    public long lastUpdated;
 
     public InventoryItem(String itemId, String type, int quantity, double unitPrice, long lastUpdated) {
         this.itemId = itemId;

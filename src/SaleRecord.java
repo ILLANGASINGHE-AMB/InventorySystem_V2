@@ -1,13 +1,13 @@
 public class SaleRecord {
-    public long id;           // autoincrement
+    public long id;
     public int billNo;
     public String customerName;
     public String phone;
-    public String type;       // Manufactured | Resell
+    public String type;
     public int qty;
     public double unitPrice;
     public double total;
-    public String dateTime;   // yyyy-MM-dd HH:mm:ss
+    public String dateTime;
     public String payment;
 
     public SaleRecord(long id, int billNo, String customerName, String phone, String type, int qty, double unitPrice, double total, String dateTime, String payment) {

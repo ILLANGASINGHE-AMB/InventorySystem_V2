@@ -182,7 +182,7 @@ public class IceInventoryApp {
                 () -> safe(inventoryDAO::totalStock)));
         center.add(cards, BorderLayout.NORTH);
 
-        // Table
+
         String[] cols = {"Item ID", "Type", "Quantity", "Unit Price (LKR)", "Last Updated"};
         inventoryModel = new DefaultTableModel(cols, 0) {
             @Override public boolean isCellEditable(int r, int c) { return c == 3; }
@@ -217,7 +217,7 @@ public class IceInventoryApp {
             }
         });
 
-        // Waste + low stock highlighting
+
         inventoryTable.setDefaultRenderer(Object.class, new DefaultTableCellRenderer() {
             @Override public Component getTableCellRendererComponent(JTable table, Object value, boolean isSelected, boolean hasFocus, int row, int column) {
                 Component c = super.getTableCellRendererComponent(table, value, isSelected, hasFocus, row, column);
@@ -638,7 +638,7 @@ public class IceInventoryApp {
         if ("inventory".equals(cardName)) refreshInventoryTable(null);
     }
 
-    /* ----------------- helpers for safe suppliers ----------------- */
+
     @FunctionalInterface
     private interface ThrowingIntSupplier { int getAsInt() throws Exception; }
 
