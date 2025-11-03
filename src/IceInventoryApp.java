@@ -148,7 +148,7 @@ public class IceInventoryApp {
                 {"Inventory", "inventory"},
                 {"sales (customer details)", "salesHistory"},
                 {"reports (daily)", "reports"},
-                {"settings (theme)", "settings"}
+                {"settings", "settings"}
         };
 
         for (String[] it : items) {
@@ -348,7 +348,7 @@ public class IceInventoryApp {
         p.setBorder(new EmptyBorder(12, 12, 12, 12));
         p.setBackground(Color.WHITE);
 
-        JLabel info = new JLabel("Settings (Theme toggle example)");
+        JLabel info = new JLabel("Settings");
         p.add(info);
         p.add(Box.createVerticalStrut(10));
 
